@@ -1,0 +1,4117 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/*Font definition */
+.header-text {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.logoStep {
+    display: block;
+    height: 120px;
+    margin: auto;
+    margin-bottom: -3.4em;
+    border: 3.5px solid;
+    border-color: white;
+    border-radius: 50%;
+}
+
+.merchant-custom-text {
+    width: 80%;
+    margin: 30px auto auto auto;
+}
+
+.logoContainer {
+    display: flex;
+    width: auto;
+    margin-left: 20px;
+}
+
+.newlogoStep {
+    display: block;
+    height: 110px;
+    width: 250px;
+    object-fit: contain;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.headerBrand {
+    margin-bottom: 0px;
+    font-size: 13px;
+    text-align: justify;
+    margin-right: 25px;
+}
+
+.footerBrand {
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    margin: 2em 0px 1em 0px;
+}
+
+.body-container {
+    padding: 0 5em;
+}
+
+.input-fields {
+    display: flex;
+    gap: 5em;
+}
+
+.invoice-paid-summary {
+    color: black !important;
+    border: none !important;
+    padding: 0px !important;
+
+    column-span {
+        color: black;
+    }
+}
+
+.input-container {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin: 0em 5px 1em 5px;
+}
+
+.payably-footer {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+
+    div {
+        margin: auto 0px;
+        position: relative;
+        left: 30px;
+        top: 5px;
+    }
+
+    img {
+        height: 40px !important;
+        min-height: 40px !important;
+        max-height: 40px !important;
+    }
+
+    #contact-info {
+        margin: auto;
+        position: initial;
+    }
+}
+
+.payably-footer-ad-version {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    font-size: 14px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    bottom: 180px;
+    margin-left: 30px;
+
+    div {
+        margin: auto 0px;
+        position: relative;
+        left: 30px;
+        top: 5px;
+    }
+
+    img {
+        height: 40px !important;
+        min-height: 40px !important;
+        max-height: 40px !important;
+    }
+
+    #contact-info {
+        margin: auto;
+        position: initial;
+    }
+}
+
+.payably-grid-template-column-ad-version {
+    grid-template-columns: 250px 520px !important;
+}
+
+.pci-logo {
+    position: relative;
+    right: 30%;
+}
+
+p#testprivacy {
+    display: grid;
+    justify-content: space-around;
+}
+
+.invoice-error {
+    display: inline-flex;
+    height: 150px;
+    width: 100%;
+
+    span {
+        margin: auto;
+        color: red;
+        font-weight: bold;
+    }
+}
+
+.input-wrapper {
+    width: 100%;
+    display: inline-flex;
+    border: solid 0.5px #CDCDCD;
+    color: rgba(192, 192, 192);
+    background-color: transparent;
+
+    input {
+        background-color: transparent !important;
+    }
+
+    span {
+        margin: auto;
+        padding-left: 5px;
+    }
+}
+
+.input-field {
+    height: auto;
+    width: 100%;
+    padding: 5px;
+    font-size: 13px;
+    color: rgba(192, 192, 192);
+    background-color: transparent;
+    border: solid 0.5px #CDCDCD;
+    outline: transparent !important;
+}
+
+.no-border {
+    border-style: none;
+}
+
+.paymentMethodSpan {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.paymentMethodContainer {
+    display: flex;
+    width: 205px;
+    border: solid 1px lightgrey;
+    padding: 1px 5px;
+    justify-content: center;
+}
+
+.nextButton {
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 20px !important;
+    height: 40px;
+}
+
+.flex-center {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.inactive-step {
+    background-color: rgba(192, 192, 192, 0.5);
+    margin-right: 5em;
+}
+
+.invoice-paid {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: rgb(75, 181, 67);
+    margin: 10px 0px;
+    text-transform: uppercase;
+
+    h4 {
+        margin: auto 0px;
+        padding-left: 10px;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+.invoice-failed {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: #C43735;
+    margin: 10px 0px;
+    text-transform: uppercase;
+
+    h4 {
+        margin: auto 0px;
+        padding-left: 10px;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.payjs-label {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#card-number-container {
+    padding-left: 4.5em;
+    row-gap: 0.3rem;
+    column-gap: 2em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 25% 15%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+}
+
+.card-holder-container {
+    padding-left: 4.5em;
+    padding-top: 1em;
+    row-gap: 0.3rem;
+    column-gap: 2em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 30% 15% 17%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+}
+
+.payjs-base {
+    border-radius: 6px;
+    border: 1px solid #ced4da !important;
+    color: #495057;
+    background: #fff;
+    padding: 0.5rem;
+    height: auto;
+    width: 93%;
+    outline: none;
+}
+
+.ach-base {
+    width: 93% !important;
+}
+
+.payjs-container input {
+    display: inline-block;
+}
+
+.payjs-wrapper {
+    width: auto !important;
+}
+
+.pay-now-div {
+    display: flex;
+    margin-left: 4em;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.info-text-div {
+    width: auto;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    min-width: 300px;
+}
+
+.disabled-link {
+    pointer-events: none;
+}
+
+.payjs-result-error {
+    text-align: center;
+    margin-left: 5em;
+    color: red;
+}
+
+.ach-container {
+    margin-left: 5em;
+    display: block;
+}
+
+.disclaimer-div {
+    margin-left: 6.5em;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.field-error {
+    color: red;
+    display: block !important;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.total-amount {
+    margin: auto 0px auto 1em;
+    font-size: 22px;
+
+    p {
+        margin-bottom: 0.1rem;
+    }
+}
+
+/*Steps widget*/
+.stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 85%;
+    top: 15px;
+    left: -40%;
+    z-index: 1;
+}
+
+.stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 30%;
+    top: 15px;
+    left: 55%;
+    z-index: 2;
+}
+
+.step-progress::after {
+    border-color: #ccc;
+}
+
+.stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+    color: white;
+    background-color: rgba(75, 181, 67, 0.3);
+}
+
+.stepper-item.active {
+    font-weight: bold;
+
+    .step-counter {
+        background: rgb(75, 181, 67);
+    }
+
+}
+
+.stepper-item.completed .step-counter {
+    background-color: #4bb543;
+}
+
+.stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 90%;
+    top: 15px;
+    left: 55%;
+    z-index: 3;
+}
+
+.stepper-item:first-child::before {
+    content: none;
+}
+
+.stepper-item:last-child::after {
+    content: none;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.shellContainer {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.shell {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    width: 70%;
+}
+
+.adShell {
+    width: 45%;
+    float: left;
+    align-content: center;
+}
+
+#ad-div {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ad-link-target {
+    width: 100%;
+    color: transparent;
+    .ad-img {
+        width: inherit;
+        height: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+    .ad-img:hover {
+        transform: scale(1.05); /* Increases size by 5% */
+    }
+}
+
+a,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="file"],
+input[type="image"],
+label[for] {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4f6efd;
+}
+
+.paymentBtn {
+    max-width: 80px;
+    max-height: 85px;
+    padding: 10px;
+}
+
+.btnV2 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 9px;
+    background: #838383;
+    border: 1px solid #838383;
+    padding: 15px 25px;
+    margin-left: 14em;
+    margin-top: 15px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.btnV2-active {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background: #2da137;
+    border: 1px solid #2da137;
+    padding: 15px 25px;
+    margin-top: 15px !important;
+    font-family: 'Verdana', sans-serif;
+}
+
+.logo {
+    width: 220px;
+    height: auto;
+}
+
+.content-area {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    /*position: relative;*/
+    z-index: 0;
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.content-area-ad {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    /*text-align: center;*/
+    display: flex;
+}
+
+.form-step {
+    width: 100%;
+    display: none;
+}
+
+.form-step.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group {
+    width: 75%;
+    display: -webkit-inline-box;
+    align-items: center;
+    justify-content: right;
+}
+
+.form-popup {
+    position: relative;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: #fff;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.popup-text {
+    text-align: left;
+}
+
+.payment-form {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+#header {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.convenience-fee {
+    font-size: 14px;
+}
+
+#paymentMethodDiv {
+    display: block;
+    padding: 0px 5em;
+}
+
+#paymentFormTextDiv {
+    cursor: pointer;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#step1Container {
+    margin-right: 0px;
+}
+
+.payment-type {
+    display: flex;
+}
+
+#nextBtnDiv {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#paymentDetailTextDiv {
+    display: flex;
+    margin-left: 5em;
+    padding-left: 5px;
+}
+
+#paymentConfirmationTextDiv {
+    display: flex;
+    margin-left: 5em;
+    padding-left: 5px;
+}
+
+.pci-logo-responsive {
+    display: none;
+    width: 100%;
+
+    img {
+        margin: auto;
+        height: 30px;
+    }
+}
+
+#step2Container {
+    padding-left: 5px;
+    padding-right: 5em;
+    margin-bottom: 5px;
+}
+
+.email-receipt {
+    width: 100%;
+}
+
+.card-number {
+    width: 100%;
+}
+
+.exp-date {
+    width: 100%;
+}
+
+.cvv-code {
+    width: 100%;
+}
+
+
+.name-on-card {
+    width: 100%;
+}
+
+.billing-street-address {
+    width: 100%;
+}
+
+.zip-code {
+    width: 100%;
+}
+
+.ach-footer {
+    margin-top: 2px;
+}
+
+.footer-separator {
+    display: inline;
+}
+
+.responsive-card-details {
+    display: none;
+}
+
+.ach-footer-responsive {
+    display: none;
+}
+
+.grid-column-end {
+    grid-column: 4;
+}
+
+.payment-summary {
+    display: flex;
+    margin-top: 15px;
+}
+
+.ach-input-fields {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    gap: 15px 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.grid-span-2-columns {
+    grid-column: 1 / 3;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding: 1em;
+}
+
+@media screen and (min-width: 1300px) {
+    .shell {
+        margin: auto;
+        width: 50% !important;
+        padding: 0px;
+    }
+
+    #ad-div {
+        width: 50% !important;
+        height: 100%;
+        overflow: hidden;
+        display: block !important;
+    }
+}
+
+@media screen and (min-width:850px) and (min-height: 1280px) and (orientation:portrait) {
+    .shell {
+        margin: auto;
+        width: 95% !important;
+        padding: 0px;
+    }
+
+    #ad-div {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 750px) and (orientation:landscape) {
+    .shell {
+        margin: auto;
+        width: 50% !important;
+        padding: 0px;
+    }
+
+    #ad-div {
+        width: 50% !important;
+        height: 100%;
+        overflow: hidden;
+        display: block!important;
+    }
+}
+
+@media screen and (min-width: 1440px)  {
+    .merchant-custom-text {
+        margin: auto;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .logoContainer {
+        position: initial;
+        width: auto;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (orientation:landscape) {
+    .payment-summary {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        column-gap: 1em;
+        row-gap: 1em;
+        margin-left: 5em;
+    }
+
+    .payment-summary-ad {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        column-gap: 1em;
+        row-gap: 1em;
+        margin-left: 2em;
+    }
+
+    #powered-by {
+        display: table;
+    }
+
+    #powered-by-span {
+        display: table-cell;
+        vertical-align: middle;
+        width: 90px;
+    }
+}
+
+@media screen and (min-width: 1920px) and (orientation:landscape) {
+    .merchant-custom-text {
+        margin: 30px auto auto auto;
+    }
+
+    .logoContainer {
+        display: flex;
+        width: auto;
+        margin-left: 20px;
+    }
+
+    #header {
+        margin-bottom: 50px;
+    }
+
+    .ach-base {
+        width: 96% !important;
+    }
+
+    .ach-input-fields {
+        justify-content: normal;
+    }
+}
+
+@media screen and (max-width: 1366px) and (orientation:landscape) {
+    .merchant-custom-text {
+        margin: auto;
+        padding: 0 1em;
+        width: 80%;
+    }
+
+    .logoContainer {
+        position: initial;
+        width: auto;
+        margin-left: 0px;
+    }
+    
+    #header {
+        margin-bottom: 10px;
+    }
+
+    .input-fields {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0em;
+    }
+
+    #summary-convenience-fee {
+        grid-column: auto;
+        margin-left: 0px;
+    }
+
+    .payment-summary {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    .payment-summary-ad {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+
+    #paymentAmountRow {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .convenience-fee {
+        font-size: 12px;
+    }
+
+    .total-amount {
+        font-size: 18px;
+    }
+
+    #card-number-container {
+        grid-template-columns: 45% 25% 15%;
+    }
+
+    .card-holder-container {
+        grid-template-columns: 20% 28% 15% 15%;
+    }
+
+    .input-wrapper {
+        span {
+            margin: auto;
+            padding-left: 0px;
+        }
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .summary-convenience-fee {
+        margin-left: 0px;
+    }
+
+    .payably-footer-ad-version {
+        position: unset;
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        font-size: 14px;
+        margin-top: 1%;
+        margin-bottom: 3%;
+
+        div {
+            margin: auto 0px;
+            position: relative;
+            left: 30px;
+            top: 5px;
+        }
+
+        img {
+            height: 40px;
+        }
+
+        div {
+            width: 100%;
+            position: initial;
+            margin: auto;
+        }
+        #powered-by {
+            padding-left: 20px;
+            width: 100%;
+        }
+        #contact-info {
+            margin: auto;
+            width: 100%;
+        }
+        #pci-logo-footer {
+            width: 100%;
+            div {
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                margin-right: 20px;
+            }
+            .pci-logo {
+                position: initial;
+            }
+        }
+    }
+
+    .payably-grid-template-column-ad-version {
+        grid-template-columns: 200px 420px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 1em !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 1em !important;
+        margin-left: 1em !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 1em !important;
+        margin-left: 1em !important;
+    }
+
+    .step2-ad-version {
+        padding-right: 1em !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 1em !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 1em !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0em !important;
+    }
+
+    .pay-btn-ad-version {
+        width: 145px !important;
+        padding: 6px 0px !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #visit-btn {
+        width: 200px;
+    }
+
+    .invoice-failed {
+        margin-top: 0px;
+    }
+
+    #failMessage {
+        padding: 0px 1em !important;
+    }
+
+    #tryAgainBtn {
+        margin: 15px 0px !important;
+
+        div {
+            width: 260px;
+        }
+    }
+
+    .payably-footer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        left: 0px;
+        padding: 0px;
+
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            right: 0px;
+            margin-top: 10px;
+        }
+
+        div {
+            position: inherit;
+        }
+    }
+
+    .payably-footer-ad-version {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        left: 0px;
+        padding: 0px;
+
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            right: 0px;
+            margin-top: 10px;
+        }
+
+        div {
+            position: inherit;
+        }
+
+        #pci-logo-footer {
+            width: 100%;
+            div {
+                margin: auto;
+                width: 15%;
+            }
+        }
+        #powered-by {
+            padding-left: 0px;
+            img {
+                margin: auto !important;
+                height: 60px !important;
+            }
+        }
+    }
+
+    .footerBrand {
+        margin: 1em 0px 0px 0px;
+        font-size: 11px;
+    }
+
+    #powered-by {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        margin: auto;
+
+        span {
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            display: block;
+            font-size: 11px;
+        }
+
+        img {
+            height: 60px !important;
+        }
+    }
+
+    #contact-info {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        margin: auto;
+    }
+
+    #pci-logo-footer {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        margin: auto;
+    }
+
+    .payment-methods {
+        display: flex;
+    }
+
+    .paymentMethodContainer {
+        width: 155px;
+        height: 120px;
+    }
+
+    #nextBtnDiv {
+        grid-column: 1 / 3;
+        flex-direction: unset;
+        margin: auto 0px;
+    }
+
+    #paymentAmountRow {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    #convenienceFeeSpan {
+        font-size: 12.5px !important;
+    }
+
+    #paymentAmountSpan {
+        font-size: 12.4px !important;
+    }
+
+    #payShell {
+        height: 15% !important;
+        width: 100% !important;
+    }
+
+    #adShell {
+        height: 85% !important;
+        width: 100% !important;
+    }
+
+    #header {
+        margin-bottom: 10px;
+    }
+
+    .headerBrand {
+        margin-right: 0px;
+    }
+
+    .body-container {
+        padding: 0 1em;
+    }
+
+    .input-fields {
+        display: flex;
+        margin-top: 15px;
+        column-gap: 1em;
+        row-gap: 0px;
+    }
+
+    .input-container {
+        margin-left: 0px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .stepper-wrapper {
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    #paymentMethodDiv {
+        display: block;
+        padding: 0px;
+    }
+
+    #paymentFormTextDiv {
+        margin-left: 1em;
+        background: rgba(192, 192, 192, 0.5);
+        margin-right: 1em;
+        width: auto;
+    }
+
+    #step1Container {
+        margin-top: 10px;
+        margin-right: 0px;
+        padding: 0px 15px;
+    }
+
+    .stepper-item::after {
+        width: 30%;
+        left: 65%;
+    }
+
+    .stepper-item::before {
+        width: 65%;
+        left: -30%;
+    }
+
+    .stepper-item.completed::after {
+        width: 70%;
+        left: 65%;
+    }
+
+    .payment-type {
+        display: block;
+    }
+
+    #paymentDetailTextDiv {
+        margin: 0px;
+    }
+
+    #paymentConfirmationTextDiv {
+        margin: 0px;
+    }
+
+    #paymentFormDiv {
+        padding: 0 15px;
+    }
+
+    .payjs-result-error {
+        margin-left: 0px;
+    }
+
+    .pci-logo {
+        display: none;
+    }
+
+    .pci-logo-responsive {
+        display: flex;
+    }
+
+    #step2Container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #dummy {
+        display: none;
+    }
+
+    #card-number-container {
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card-holder-container {
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #cardTypeDiv {
+        padding-left: 15px !important;
+    }
+
+    .card-number {
+        max-width: inherit;
+        grid-column: span 2;
+        grid-row: 1;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .exp-date {
+        grid-column-start: 1;
+        grid-row: 2;
+        padding-left: 14px;
+        width: auto !important;
+        margin-bottom: 15px;
+
+        input {
+            width: 350px !important;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .cvv-code {
+        grid-column-start: 2;
+        grid-row: 2;
+        padding-right: 22px;
+        width: 135px !important;
+
+        input {
+            width: 225px;
+        }
+
+        label {
+            width: 100%;
+        }
+
+    }
+
+    .name-on-card {
+        max-width: inherit;
+        grid-column: span 2;
+        grid-row: 1;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .billing-street-address {
+        grid-column-start: 1;
+        grid-row: 2;
+        padding-left: 14px;
+
+        input {
+            width: 950px !important;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .zip-code {
+        grid-column-start: 2;
+        grid-row: 2;
+        padding-right: 22px;
+        width: 90% !important;
+        margin-left: 220px;
+
+        input {
+            margin-left: 140px;
+            width: 225px;
+        }
+
+        label {
+            margin-left: 140px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 140px;
+        }
+
+    }
+
+    .email-receipt {
+        width: 85% !important;
+        padding-left: 18px;
+        padding-right: 15px;
+        grid-column: 1 / 3;
+        margin-top: 10px;
+
+        input {
+            width: 100% !important;
+        }
+    }
+
+    .pay-now-div {
+        margin-left: 0px;
+        display: block;
+        margin-top: 0.5em;
+    }
+
+    .total-amount {
+        margin: auto 0px auto 1.5em;
+    }
+
+    .btnV2-active {
+        width: 200px;
+        margin: auto;
+        margin-top: 0px !important;
+    }
+
+    .nextButton {
+        width: 155px;
+        margin-top: 10px !important;
+    }
+
+    .footer-separator {
+        display: none;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+
+    .ach-footer-responsive {
+        display: block;
+    }
+
+    #card-summary {
+        display: none !important;
+    }
+
+    #ach-summary {
+        display: none !important;
+    }
+
+    .payment-summary {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        column-gap: 0px;
+        text-align: start;
+
+        input,
+        div,
+        span {
+            border: none;
+            padding: 0.5px 0px;
+        }
+    }
+
+    .grid-column-end {
+        grid-column: 3;
+    }
+
+    .remove-padding-responsive {
+        padding: 0px 0px 0px 30px;
+    }
+
+    .ach-container {
+        margin-left: 0px;
+    }
+
+    .ach-input-fields {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: auto;
+        gap: 15px 10px;
+        padding: 0px 1em;
+    }
+
+    .grid-span-2-columns {
+        grid-column: 1;
+        grid-row: 2;
+        width: auto !important;
+    }
+
+    .ach-input-fields-2 {
+        padding: 0px 1em;
+    }
+
+    .ach-input-fields-3 {
+        padding: 0px 1em;
+    }
+
+    #email-receipt-label,
+    #accounting-confirm-label {
+        text-overflow: ellipsis;
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    .disclaimer-div {
+        margin: 10px 0px;
+        padding: 0px 1.5em;
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+}
+
+@media (max-width: 1260px) {
+    .exp-date {
+        input {
+            width: 20em !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 150px;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 50em !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 140px;
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .merchant-custom-text {
+        margin: auto;
+        padding: 0 1em;
+        width: 80%;
+    }
+
+    .logoContainer {
+        position: initial;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    #headerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 330px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 175px;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 730px !important;
+        }
+    }
+
+    .zip-code {
+        margin-left: 20px;
+
+        input {
+            margin-left: 260px;
+            width: 110px;
+        }
+
+        label {
+            margin-left: 260px;
+        }
+
+        span {
+            margin-left: 260px;
+        }
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+}
+
+@media (max-width: 960px) {
+    .exp-date {
+        input {
+            width: 305px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 140px;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 685px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 260px;
+            width: 80px;
+        }
+    }
+}
+
+@media (max-width: 940px) and (orientation:landscape) {
+    .merchant-custom-text {
+        margin: auto;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .logoContainer {
+        position: initial !important;
+        width: auto !important;
+        margin-left: 0px !important;
+    }
+
+    #header {
+        margin-bottom: 20px !important;
+    }
+
+    .shell {
+        margin: auto;
+        width: 95% !important;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 912px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 235px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 165px;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 635px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 220px;
+            width: 100px;
+        }
+
+        label {
+            margin-left: 220px;
+        }
+
+        span {
+            margin-left: 220px;
+        }
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+}
+
+@media (max-width: 853px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 370px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 165px;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 570px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 190px;
+            width: 100px;
+        }
+
+        label {
+            margin-left: 190px;
+        }
+
+        span {
+            margin-left: 190px;
+        }
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+}
+
+@media (max-width: 820px) {
+    .merchant-custom-text {
+        margin: auto;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .logoContainer {
+        position: initial;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .shell {
+        margin: auto;
+        width: 95% !important;
+        padding: 0px;
+    }
+
+    .exp-date {
+        input {
+            width: 350px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 175px;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 550px !important;
+        }
+    }
+
+    .zip-code {
+        margin-left: 20px;
+
+        input {
+            margin-left: 165px;
+            width: 110px;
+        }
+
+        label {
+            margin-left: 165px;
+        }
+
+        span {
+            margin-left: 1650px;
+        }
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .merchant-custom-text {
+        margin: auto;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .logoContainer {
+        position: initial;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .shell {
+        margin: auto;
+        width: 95% !important;
+        padding: 0px;
+    }
+
+    .exp-date {
+        input {
+            width: 300px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 175px;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 485px !important;
+        }
+    }
+
+    .zip-code {
+        margin-left: 25px;
+
+        input {
+            margin-left: 140px;
+            width: 110px;
+        }
+
+        label {
+            margin-left: 140px;
+        }
+
+        span {
+            margin-left: 140px;
+        }
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .exp-date {
+        input {
+            width: 215px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 145px;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 415px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 140px;
+            width: 145px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .invoice-failed {
+        margin-top: 0px;
+    }
+
+    #failMessage {
+        padding: 0px 1em !important;
+    }
+
+    #tryAgainBtn {
+        margin: 15px 0px !important;
+
+        div {
+            width: 260px;
+        }
+    }
+
+    .payably-footer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        left: 0px;
+        padding: 0px;
+
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            right: 0px;
+            margin-top: 10px;
+        }
+
+        div {
+            position: inherit;
+        }
+    }
+
+    .payably-footer-ad-version {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        left: 0px;
+        padding: 0px;
+
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            right: 0px;
+            margin-top: 10px;
+        }
+
+        div {
+            position: inherit;
+        }
+                
+        #pci-logo-footer {
+            width: 100%;
+            div {
+                margin: auto;
+                width: 15%;
+            }
+        }
+        #powered-by {
+            padding-left: 0px;
+            img {
+                margin: auto !important;
+                height: 60px !important;
+            }
+        }
+    }
+
+    .footerBrand {
+        margin: 1em 0px 0px 0px;
+        font-size: 11px;
+    }
+
+    #powered-by {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        margin: auto;
+
+        span {
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            display: block;
+            font-size: 11px;
+        }
+    }
+
+    #contact-info {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        margin: auto;
+    }
+
+    #pci-logo-footer {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        margin: auto;
+    }
+
+    .payment-methods {
+        display: grid;
+        grid-template-columns: 155px 155px;
+    }
+
+    .shell {
+        margin: auto;
+        width: 95% !important;
+        padding: 0px;
+    }
+
+    .paymentMethodContainer {
+        width: 155px;
+        height: 120px;
+    }
+
+    #nextBtnDiv {
+        grid-column: 1 / 3;
+    }
+
+    #paymentAmountRow {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #convenienceFeeSpan {
+        font-size: 12.5px !important;
+    }
+
+    #paymentAmountSpan {
+        font-size: 12.4px !important;
+    }
+
+    #payShell {
+        height: 15% !important;
+        width: 100% !important;
+    }
+
+    #adShell {
+        height: 85% !important;
+        width: 100% !important;
+    }
+
+    #header {
+        margin-bottom: 10px;
+    }
+
+    .headerBrand {
+        margin-right: 0px;
+    }
+
+    .body-container {
+        padding: 0 1em;
+    }
+
+    .input-fields {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 15px;
+        margin-top: 15px;
+        column-gap: 1em;
+        row-gap: 0px;
+    }
+
+    .input-container {
+        margin-left: 0px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .stepper-wrapper {
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    #paymentMethodDiv {
+        display: block;
+        padding: 0px;
+    }
+
+    #paymentFormTextDiv {
+        margin-left: 1em;
+        background: rgba(192, 192, 192, 0.5);
+        margin-right: 1em;
+        width: auto;
+    }
+
+    #step1Container {
+        margin-top: 10px;
+        margin-right: 0px;
+        padding: 0px 15px;
+    }
+
+    .stepper-item::after {
+        width: 30%;
+        left: 65%;
+    }
+
+    .stepper-item::before {
+        width: 65%;
+        left: -30%;
+    }
+
+    .stepper-item.completed::after {
+        width: 70%;
+        left: 65%;
+    }
+
+    .payment-type {
+        display: block;
+    }
+
+    #nextBtnDiv {
+        flex-direction: unset;
+        margin: auto;
+    }
+
+    #paymentDetailTextDiv {
+        margin: 0px;
+    }
+
+    #paymentConfirmationTextDiv {
+        margin: 0px;
+    }
+
+    #paymentFormDiv {
+        padding: 0 15px;
+    }
+
+    .payjs-result-error {
+        margin-left: 0px;
+    }
+
+    .pci-logo {
+        display: none;
+    }
+
+    .pci-logo-responsive {
+        display: flex;
+    }
+
+    #step2Container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #dummy {
+        display: none;
+    }
+
+    #card-number-container {
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card-holder-container {
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #cardTypeDiv {
+        padding-left: 15px !important;
+    }
+
+    .card-number {
+        max-width: inherit;
+        grid-column: span 2;
+        grid-row: 1;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .exp-date {
+        grid-column-start: 1;
+        grid-row: 2;
+        padding-left: 14px;
+        width: 120px !important;
+        margin-bottom: 15px;
+
+        input {
+            width: 125px !important;
+        }
+    }
+
+    .cvv-code {
+        grid-column-start: 2;
+        grid-row: 2;
+        padding-right: 22px;
+        width: 135px !important;
+
+        input {
+            width: 95px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .name-on-card {
+        max-width: inherit;
+        grid-column: span 2;
+        grid-row: 1;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .billing-street-address {
+        grid-column-start: 1;
+        grid-row: 2;
+        padding-left: 14px;
+        width: 220px !important;
+
+        input {
+            width: 225px !important;
+        }
+    }
+
+    .zip-code {
+        grid-column-start: 2;
+        grid-row: 2;
+        padding-right: 22px;
+        width: 90% !important;
+        margin-left: 25px;
+
+        input {
+            margin-left: 36px;
+            width: 95px;
+        }
+
+        label {
+            margin-left: 36px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 35px;
+        }
+
+    }
+
+    .email-receipt {
+        width: 85% !important;
+        padding-left: 18px;
+        padding-right: 15px;
+        grid-column: 1 / 3;
+        margin-top: 10px;
+
+        input {
+            width: 100% !important;
+        }
+    }
+
+    .pay-now-div {
+        margin-left: 0px;
+        display: block;
+        margin-top: 0.5em;
+    }
+
+    .total-amount {
+        margin: auto 0px auto 1.5em;
+    }
+
+    .btnV2-active {
+        width: 200px;
+        margin: auto;
+        margin-top: 0px !important;
+    }
+
+    .nextButton {
+        width: 155px;
+        margin-top: 10px !important;
+    }
+
+    .footer-separator {
+        display: none;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+
+    .ach-footer-responsive {
+        display: block;
+    }
+
+    #card-summary {
+        display: none !important;
+    }
+
+    #ach-summary {
+        display: none !important;
+    }
+
+    .payment-summary {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 0px;
+        text-align: start;
+
+        input,
+        div,
+        span {
+            border: none;
+            padding: 0.5px 0px;
+        }
+    }
+
+    .grid-column-end {
+        grid-column: 3;
+    }
+
+    .remove-padding-responsive {
+        padding: 0px;
+    }
+
+    .ach-container {
+        margin-left: 0px;
+    }
+
+    .ach-input-fields {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: auto;
+        gap: 15px 10px;
+        padding: 0px 1em;
+    }
+
+    .grid-span-2-columns {
+        grid-column: 1;
+        grid-row: 2;
+        width: auto !important;
+    }
+
+    .ach-input-fields-2 {
+        padding: 0px 1em;
+    }
+
+    .ach-input-fields-3 {
+        padding: 0px 1em;
+    }
+
+    #email-receipt-label,
+    #accounting-confirm-label {
+        text-overflow: ellipsis;
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    .disclaimer-div {
+        margin: 10px 0px;
+        padding: 0px 1.5em;
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    #payShell {
+        height: 45% !important;
+        width: 100% !important;
+    }
+
+    #adShell {
+        height: 55% !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    #payShell {
+        height: 48% !important;
+        width: 100% !important;
+    }
+
+    #adShell {
+        height: 52% !important;
+        width: 100% !important;
+    }
+
+    #captchaDiv {
+        margin-left: 25px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    #payShell {
+        height: 34% !important;
+        width: 100% !important;
+    }
+
+    #adShell {
+        height: 66% !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    #payShell {
+        height: 44% !important;
+        width: 100% !important;
+    }
+
+    #adShell {
+        height: 56% !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-height: 720px ) and (orientation:portrait) {
+    .payment-form {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-height: 720px ) and (max-width: 1024px ) {
+    #ad-div {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 720px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    .content-area {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: auto;
+        z-index: 0;
+        /*text-align: center;*/
+        display: flex;
+        flex-direction: column;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .content-area-ad {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: auto;
+        z-index: 0;
+        /*text-align: center;*/
+        display: flex;
+    }
+}
+
+@media (max-width: 720px) {
+    .cvv-code {
+        input {
+            width: 154px;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 140px;
+            width: 100px;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .cvv-code {
+        input {
+            width: 90px;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 140px;
+            width: 90px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .merchant-custom-text {
+        margin: auto;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .logoContainer {
+        position: initial;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    body {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #header {
+        margin-bottom: 10px;
+    }
+
+    .headerBrand {
+        margin-right: 0px;
+    }
+
+    .body-container {
+        padding: 0 1em;
+    }
+
+    .input-fields {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 15px;
+        margin-top: 15px;
+        column-gap: 1em;
+        row-gap: 0px;
+    }
+
+    .input-container {
+        margin-left: 0px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .stepper-wrapper {
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    #paymentMethodDiv {
+        display: block;
+        padding: 0px;
+    }
+
+    #paymentFormTextDiv {
+        margin-left: 1em;
+        background: rgba(192, 192, 192, 0.5);
+        margin-right: 1em;
+        width: auto;
+    }
+
+    #step1Container {
+        margin-top: 10px;
+        margin-right: 0px;
+        padding: 0px 15px;
+    }
+
+    .stepper-item::after {
+        width: 30%;
+        left: 65%;
+    }
+
+    .stepper-item::before {
+        width: 65%;
+        left: -30%;
+    }
+
+    .stepper-item.completed::after {
+        width: 70%;
+        left: 65%;
+    }
+
+    .payment-type {
+        display: block;
+    }
+
+    #nextBtnDiv {
+        flex-direction: unset;
+        margin: auto;
+    }
+
+    #paymentDetailTextDiv {
+        margin: 0px;
+    }
+
+    #paymentConfirmationTextDiv {
+        margin: 0px;
+    }
+
+    #paymentFormDiv {
+        padding: 0 15px;
+    }
+
+    .payjs-result-error {
+        margin-left: 0px;
+    }
+
+    .pci-logo {
+        display: none;
+    }
+
+    .pci-logo-responsive {
+        display: flex;
+    }
+
+    #step2Container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #dummy {
+        display: none;
+    }
+
+    #card-number-container {
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card-holder-container {
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #cardTypeDiv {
+        padding-left: 15px !important;
+    }
+
+    .card-number {
+        max-width: inherit;
+        grid-column: span 2;
+        grid-row: 1;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .exp-date {
+        grid-column-start: 1;
+        grid-row: 2;
+        padding-left: 14px;
+        width: 135px !important;
+        max-width: 135px !important;
+        margin-bottom: 15px;
+
+        input {
+            width: 125px !important;
+        }
+    }
+
+    .cvv-code {
+        grid-column-start: 2;
+        grid-row: 2;
+        padding-right: 22px;
+        width: 135px !important;
+        max-width: 135px !important;
+
+        input {
+            width: 95px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .name-on-card {
+        max-width: inherit;
+        grid-column: span 2;
+        grid-row: 1;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    .billing-street-address {
+        grid-column-start: 1;
+        grid-row: 2;
+        padding-left: 14px;
+        width: 235px !important;
+        max-width: 235px !important;
+
+        input {
+            width: 225px !important;
+        }
+    }
+
+    .zip-code {
+        grid-column-start: 2;
+        grid-row: 2;
+        padding-right: 22px;
+        width: 90% !important;
+        max-width: 235px !important;
+        margin-left: 25px;
+
+        input {
+            margin-left: 36px;
+            width: 80px;
+        }
+
+        label {
+            margin-left: 36px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 36px;
+        }
+    }
+
+    .email-receipt {
+        width: 85% !important;
+        padding-left: 18px;
+        padding-right: 15px;
+        grid-column: 1 / 3;
+        margin-top: 10px;
+
+        input {
+            width: 100% !important;
+        }
+    }
+
+    .pay-now-div {
+        margin-left: 0px;
+        display: block;
+        margin-top: 0.5em;
+    }
+
+    .total-amount {
+        margin: auto 0px auto 0.9em;
+    }
+
+    .btnV2-active {
+        width: 200px;
+        margin: auto;
+        margin-top: 0px !important;
+    }
+
+    .nextButton {
+        width: 155px;
+        margin-top: 10px !important;
+    }
+
+    .footer-separator {
+        display: none;
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+
+    .ach-footer-responsive {
+        display: block;
+    }
+
+    #card-summary {
+        display: none !important;
+    }
+
+    #ach-summary {
+        display: none !important;
+    }
+
+    .payment-summary {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        /*120.6px 120.6px 120.6px;*/
+        column-gap: 0px;
+        text-align: start;
+
+        input,
+        div,
+        span {
+            border: none;
+            padding: 0.5px 0px;
+        }
+    }
+
+    .grid-column-end {
+        grid-column: 3;
+    }
+
+    .remove-padding-responsive {
+        padding: 0px;
+    }
+
+    .ach-container {
+        margin-left: 0px;
+    }
+
+    .ach-input-fields {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: auto;
+        gap: 15px 10px;
+        padding: 0px 1em;
+    }
+
+    .grid-span-2-columns {
+        grid-column: 1;
+        grid-row: 2;
+        width: auto !important;
+    }
+
+    .ach-input-fields-2 {
+        padding: 0px 1em;
+    }
+
+    .ach-input-fields-3 {
+        padding: 0px 1em;
+    }
+
+    #email-receipt-label,
+    #accounting-confirm-label {
+        text-overflow: ellipsis;
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    .disclaimer-div {
+        margin: 10px 0px;
+        padding: 0px 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 140px !important;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 340px !important;
+        }
+    }
+
+    .zip-code {
+        margin-left: 20px;
+    }
+
+    .input-wrapper {
+        width: 60%;
+    }
+
+    #paymentAmountRow {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .payment-methods {
+        display: grid;
+        grid-template-columns: 155px 155px;
+    }
+
+    #summary-invoice {
+        margin-left: 20px;
+    }
+
+    #summary-cardtype {
+        margin-left: 20px;
+    }
+
+    .responsive-card-details {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .zip-code {
+        margin-left: 23px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .zip-code {
+        margin-left: 22px;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 90px !important;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 190px !important;
+        }
+    }
+
+    .zip-code {
+        margin-left: 23px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    #paymentTypeTextDiv {
+        grid-column: 1/3 !important;
+        grid-row: 1 !important;
+    }
+
+    #cardMethodDiv {
+        margin-left: 0px !important;
+    }
+
+    #payNowBtnDiv {
+        grid-row: 3 !important;
+        margin-left: -100%;
+        margin-bottom: 2em;
+    }
+
+    #bankMethodHR {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
+
+    #paymentTypeTextAdDiv {
+        grid-column: 1/3 !important;
+        grid-row: 1 !important;
+        margin-left: 0px !important;
+    }
+
+    #paymentMethodAdDiv {
+        grid-column: 1/3 !important;
+        max-height: 80px !important;
+    }
+
+    #cardMethodAdDiv {
+        margin-left: 0px !important;
+    }
+
+    #payNowBtnAdDiv {
+        grid-row: 3 !important;
+        margin-left: -100%;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 450px) {
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 160px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 95px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 260px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 54px;
+            width: 95px;
+        }
+
+        label {
+            margin-left: 54px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 54px;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 170px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 95px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 250px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 60px;
+            width: 60px;
+        }
+
+        label {
+            margin-left: 60px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 60px;
+        }
+    }
+}
+
+@media (max-width: 412px) {
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 125px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 95px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 250px !important;
+        }
+    }
+
+    .zip-code {
+        margin-left: 25px;
+
+        input {
+            margin-left: 53px;
+            width: 70px;
+        }
+
+        label {
+            margin-left: 53px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 53px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 115px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 100px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 220px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 35px;
+            width: 65px;
+        }
+
+        label {
+            margin-left: 35px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 35px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 100px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 95px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 210px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 28px;
+            width: 70px;
+        }
+
+        label {
+            margin-left: 28px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 28px;
+        }
+    }
+}
+
+@media (max-width: 344px) {
+    .step2-ad-version {
+        padding-right: 0px !important;
+    }
+
+    .payably-paymentMethodDiv-ad-version {
+        padding: 0px 0px !important;
+    }
+
+    .payably-paymentDetailTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .payably-paymentConfirmationTextDiv-ad-version {
+        padding: 0px 0px 0px 5px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .simple-left-padding-ad {
+        padding-left: 0px !important;
+    }
+
+    .simple-left-margin-ad {
+        margin-left: 0px !important;
+    }
+
+    .remove-margin-left-ad {
+        margin-left: 0px !important;
+    }
+
+    #ad-div {
+        display: none;
+    }
+
+    .exp-date {
+        input {
+            width: 80px !important;
+        }
+    }
+
+    .cvv-code {
+        input {
+            width: 95px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .billing-street-address {
+        input {
+            width: 195px !important;
+        }
+    }
+
+    .zip-code {
+        input {
+            margin-left: 20px;
+            width: 95px;
+        }
+
+        label {
+            margin-left: 20px;
+            width: 100%;
+        }
+
+        span {
+            margin-left: 20px;
+        }
+    }
+}
+
+.input-field {
+    border: none;
+    color: black;
+}
+
+.input-wrapper {
+    color: black;
+    border: none;
+}
