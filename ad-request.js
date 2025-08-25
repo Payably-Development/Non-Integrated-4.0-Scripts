@@ -157,7 +157,7 @@ function checkCard() {
 };
 
 function isCaptchaChecked() {
-    return grecaptcha && grecaptcha.getResponse().length !== 0;
+    return grecaptcha && grecaptcha.enterprise.getResponse.length !== 0;
 }
 
 function detectLink(linkString) {
