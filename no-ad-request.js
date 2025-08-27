@@ -188,7 +188,7 @@ function submitform() {
 }
 
 function onPay() {
-    if (isCaptchaChecked()) {
+    if (true) {
         validated = true;
         if (validateTwoStep()) {
             var amountValue = $("#paymentAmount").val();
