@@ -722,10 +722,10 @@ function displayInvoiceNumberError() {
     if (result.hasError) {
         $("invoiceDetailsErrorLabel").text(result.errorMessage);
         setErrorClass($("invoiceDetailsErrorLabel"));
-        $('#invoiceDetailsErrorLabel').show()
+        $('#invoiceDetailsErrorLabel').show();
     } else {
         removeErrorClass($("invoiceDetailsErrorLabel"));
-        $('#invoiceDetailsErrorLabel').hide()
+        $('#invoiceDetailsErrorLabel').hide();
     }
 }
 
@@ -734,11 +734,11 @@ function displayCustomerNameError() {
     if (result.hasError) {
         $("#companyNameErrorLabel").text(result.errorMessage);
         setErrorClass($("#companyNameErrorLabel"));
-        $('#companyNameErrorLabel').show()
+        $('#companyNameErrorLabel').show();
     } else {
         removeErrorClass($("#companyNameErrorLabel"));
         $("#step3-invoiceaccountname").html($("#companyName-details").val());
-        $('#companyNameErrorLabel').show()
+        $('#companyNameErrorLabel').hide();
     }
 }
 
