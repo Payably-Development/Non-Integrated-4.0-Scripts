@@ -519,6 +519,7 @@ $(document).ready(function ($) {
 });
 
 function calculateTotal() {
+    $('#paymentAmountExceededLabel').hide();
     if ($("#paymentAmount").val().length != 0) {
         let invoiceAmount = parseFloat($("#paymentAmount").val().replaceAll(',', ''));
         const feeExist = merchant.applySurcharge;
@@ -730,7 +731,7 @@ function displayInvoiceNumberError() {
 }
 
 function displayCustomerNameError() {
-    let result = getFieldErrors("companyName-details", $("#companyNameErrorLabel").val(), null);
+    let result = getFieldErrors("companyName-details", $("#companyName-details").val(), null);
     if (result.hasError) {
         $("#companyNameErrorLabel").text(result.errorMessage);
         setErrorClass($("#companyNameErrorLabel"));
@@ -899,7 +900,7 @@ function payBtnStatusEnabled(isEnabled) {
 function nextStep() {
     //Validate if can continue to step 2
     if ($('#invoiceNumber-details').val() !== "" && $('#companyName-details').val() !== "" && $('#paymentAmount').val() !== "") {
-
+        
         /* Set fancy progress style */
         $("#step2").addClass('step-progress');
 
