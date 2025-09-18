@@ -912,7 +912,20 @@ function nextStep() {
         $("#toggle-btn-step1").attr('src', 'https://media.localsignal.com/files/35086035-b2c4-454e-bad7-f8471c003aa9/arrow_up.png');
         $("#btnExpandStep2").show();
         $("#toggle-btn-step2").attr('src', 'https://media.localsignal.com/files/35086035-b2c4-454e-bad7-f8471c003aa9/arrow_down.png');
+    }else{
+        if ($('#invoiceNumber-details').val() !== "" ) {
+            displayInvoiceNumberError();
+        }
+
+        if ($('#companyName-details').val() !== "") {
+            displayCustomerNameError();
+        }
+
+        if ($('#paymentAmount').val() !== "") {
+            $('#paymentAmountExceededLabel').show();
+        }
     }
+
 }
 
 function activeStep1() {
