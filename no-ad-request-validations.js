@@ -720,7 +720,7 @@ function inititateListeners() {
 function displayInvoiceNumberError() {
     let result = getFieldErrors("invoiceNumber-details", $("#invoiceNumber-details").val(), null);
     if (result.hasError) {
-        $("invoiceDetailsErrorLabel").text(result.errorMessage);
+        $("#invoiceDetailsErrorLabel").text(result.errorMessage);
         setErrorClass($("invoiceDetailsErrorLabel"));
         $('#invoiceDetailsErrorLabel').show();
     } else {
