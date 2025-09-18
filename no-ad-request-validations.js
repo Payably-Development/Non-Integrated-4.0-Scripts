@@ -717,8 +717,8 @@ function inititateListeners() {
 }
 
 
-function displayInvoiceNumberError(value) {
-    let result = getFieldErrors("invoiceNumber-details", value, null);
+function displayInvoiceNumberError() {
+    let result = getFieldErrors("invoiceNumber-details", $("#invoiceNumber-details").val(), null);
     if (result.hasError) {
         $("invoiceDetailsErrorLabel").text(result.errorMessage);
         setErrorClass($("invoiceDetailsErrorLabel"));
@@ -727,8 +727,8 @@ function displayInvoiceNumberError(value) {
     }
 }
 
-function displayCustomerNameError(value) {
-    let result = getFieldErrors("companyName-details", value, null);
+function displayCustomerNameError() {
+    let result = getFieldErrors("companyName-details", $("#companyNameErrorLabel").val(), null);
     if (result.hasError) {
         $("#companyNameErrorLabel").text(result.errorMessage);
         setErrorClass($("#companyNameErrorLabel"));
