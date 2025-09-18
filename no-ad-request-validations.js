@@ -712,8 +712,8 @@ function inititateListeners() {
 
     $("#account-number-confirm").on("blur", validateAccountNumberConf);
 
-    $("#companyNameErrorLabel").on("blur", displayCustomerNameError);;
-    $("#invoiceDetailsErrorLabel").on("blur", displayInvoiceNumberError);;
+    $("#companyName-details").on("blur", displayCustomerNameError);;
+    $("#invoiceNumber-details").on("blur", displayInvoiceNumberError);;
 }
 
 
