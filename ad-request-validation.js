@@ -512,7 +512,8 @@ $(document).ready(function ($) {
 
     /*Hide paymentAmountExceededLabel by default*/
     $("#paymentAmountExceededLabel").hide();
-
+    $("#companyNameErrorLabel").hide();
+    $("#invoiceDetailsErrorLabel").hide();
     /* Check if it's 'with Ads version' or not */
     let screenSize = $(window).width();
     adsVersion = true;
