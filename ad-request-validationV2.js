@@ -855,6 +855,18 @@ function getFieldErrors(field, value, valueCompare) {
                 result.errorMessage = "Account number does not match";
             }
             break;
+        case "companyName-details":
+            if (value === "") {
+                result.hasError = true;
+                result.errorMessage = "This field is required";
+            }
+            break;
+        case "invoiceNumber-details":
+            if (value === "") {
+                result.hasError = true;
+                result.errorMessage = "This field is required";
+            }
+            break;
     }
 
     return result;
