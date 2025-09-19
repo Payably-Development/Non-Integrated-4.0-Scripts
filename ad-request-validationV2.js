@@ -523,6 +523,7 @@ $(document).ready(function ($) {
 });
 
 function calculateTotal() {
+    $('#paymentAmountExceededLabel').hide();
     if ($("#paymentAmount").val().length != 0) {
         let invoiceAmount = parseFloat($("#paymentAmount").val().replaceAll(',', ''));
         const feeExist = merchant.applySurcharge;
