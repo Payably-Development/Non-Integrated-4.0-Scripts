@@ -512,7 +512,8 @@ $(document).ready(function ($) {
 
     /*Hide paymentAmountExceededLabel by default*/
     $("#paymentAmountExceededLabel").hide();
-
+    $("#companyNameErrorLabel").hide();
+    $("#invoiceDetailsErrorLabel").hide();
     /* Check if it's 'with Ads version' or not */
     let screenSize = $(window).width();
     adsVersion = true;
@@ -522,6 +523,7 @@ $(document).ready(function ($) {
 });
 
 function calculateTotal() {
+    $('#paymentAmountExceededLabel').hide();
     if ($("#paymentAmount").val().length != 0) {
         let invoiceAmount = parseFloat($("#paymentAmount").val().replaceAll(',', ''));
         const feeExist = merchant.applySurcharge;
@@ -714,6 +716,34 @@ function inititateListeners() {
     $("#account-number").on("blur", validateAccountNumber);
 
     $("#account-number-confirm").on("blur", validateAccountNumberConf);
+
+    $("#companyName-details").on("blur", displayCustomerNameError);
+    $("#invoiceNumber-details").on("blur", displayInvoiceNumberError);
+}
+
+function displayInvoiceNumberError() {
+    let result = getFieldErrors("invoiceNumber-details", $("#invoiceNumber-details").val(), null);
+    if (result.hasError) {
+        $("#invoiceDetailsErrorLabel").text(result.errorMessage);
+        setErrorClass($("invoiceDetailsErrorLabel"));
+        $('#invoiceDetailsErrorLabel').show();
+    } else {
+        removeErrorClass($("invoiceDetailsErrorLabel"));
+        $('#invoiceDetailsErrorLabel').hide();
+    }
+}
+
+function displayCustomerNameError() {
+    let result = getFieldErrors("companyName-details", $("#companyName-details").val(), null);
+    if (result.hasError) {
+        $("#companyNameErrorLabel").text(result.errorMessage);
+        setErrorClass($("#companyNameErrorLabel"));
+        $('#companyNameErrorLabel').show();
+    } else {
+        removeErrorClass($("#companyNameErrorLabel"));
+        $("#step3-invoiceaccountname").html($("#companyName-details").val());
+        $('#companyNameErrorLabel').hide();
+    }
 }
 
 function validateAccountNumber(event) {
@@ -826,6 +856,18 @@ function getFieldErrors(field, value, valueCompare) {
                 result.errorMessage = "Account number does not match";
             }
             break;
+        case "companyName-details":
+            if (value === "") {
+                result.hasError = true;
+                result.errorMessage = "This field is required";
+            }
+            break;
+        case "invoiceNumber-details":
+            if (value === "") {
+                result.hasError = true;
+                result.errorMessage = "This field is required";
+            }
+            break;
     }
 
     return result;
@@ -859,18 +901,35 @@ function payBtnStatusEnabled(isEnabled) {
 }
 
 function nextStep() {
-    /* Set fancy progress style */
-    $("#step2").addClass('step-progress');
+    if ($('#invoiceNumber-details').val() !== "" && $('#companyName-details').val() !== "" && $('#paymentAmount').val() !== "") {
+        
+        /* Set fancy progress style */
+        $("#step2").addClass('step-progress');
 
-    //Set step 1 as inactive
-    inactiveStep1();
-    //Set step 2 as active
-    activeStep2();
+        //Set step 1 as inactive
+        inactiveStep1();
+        //Set step 2 as active
+        activeStep2();
 
-    $("#btnExpandStep1").show();
-    $("#toggle-btn-step1").attr('src', 'https://media.localsignal.com/files/35086035-b2c4-454e-bad7-f8471c003aa9/arrow_up.png');
-    $("#btnExpandStep2").show();
-    $("#toggle-btn-step2").attr('src', 'https://media.localsignal.com/files/35086035-b2c4-454e-bad7-f8471c003aa9/arrow_down.png');
+        $("#btnExpandStep1").show();
+        $("#toggle-btn-step1").attr('src', 'https://media.localsignal.com/files/35086035-b2c4-454e-bad7-f8471c003aa9/arrow_up.png');
+        $("#btnExpandStep2").show();
+        $("#toggle-btn-step2").attr('src', 'https://media.localsignal.com/files/35086035-b2c4-454e-bad7-f8471c003aa9/arrow_down.png');
+
+    } else {
+        if ($('#invoiceNumber-details').val() === "") {
+            displayInvoiceNumberError();
+        }
+
+        if ($('#companyName-details').val() === "") {
+            displayCustomerNameError();
+        }
+
+        if ($('#paymentAmount').val() === "") {
+            $('#paymentAmountExceededLabel').show();
+        }
+    }
+
 }
 
 function selectPaymentMethod() {
